@@ -924,6 +924,12 @@ download "https://ffmpeg.org/releases/ffmpeg-$FFMPEG_VERSION.tar.gz" "ffmpeg-$FF
   --enable-libvo-amrwbenc \
   --enable-libzvbi \
   --enable-pthreads \
+  --enable-cross-compile \
+  --disable-doc \
+  --target-os=linux \
+  --arch=arm64 \
+  --cross-prefix=aarch64-linux-gnu- \
+  --enable-shared \
   --enable-static \
   --enable-version3 \
   --extra-cflags="${CFLAGS}" \
